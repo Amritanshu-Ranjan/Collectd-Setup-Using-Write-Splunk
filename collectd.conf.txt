@@ -159,8 +159,6 @@ server "localhost"
 buffersize 9000
 useudp true
 udpport 1970
-Dimension "entity_type:nix_host"
-
 </Plugin>
 
 
