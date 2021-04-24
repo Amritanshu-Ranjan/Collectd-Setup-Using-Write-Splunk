@@ -1,0 +1,10 @@
+[udp-metrics-hostoverride]
+DEST_KEY = MetaData:Host
+REGEX = \"host\":\s\"(\S+)\"
+FORMAT = host::$1
+
+[extract_dims]
+REGEX = \"([^{]\S+)\":\s(\"*[\w\d\s.-]+\"*)
+FORMAT = $1::$2
+WRITE_META = true
+REPEAT_MATCH = true
